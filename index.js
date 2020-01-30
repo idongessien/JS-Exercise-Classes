@@ -46,6 +46,15 @@ class Person {
     this.age = age;
     this.stomach = [];
   }
+  eat() {
+
+  }
+  poop() {
+
+  }
+  toString() {
+    
+  }
 }
 
 /*
