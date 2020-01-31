@@ -141,9 +141,9 @@ class Lambdasian {
 class Instructor extends Lambdasian {
   constructor(studentian){
     super(studentian)
-    this.specialty = 'less';
-    this.favLanguage = 'javascript';
-    this.catchPhrase = 'viva la code!';
+    this.specialty = studentian.specialty;
+    this.favLanguage = studentian.favLanguage;
+    this.catchPhrase = studentian.catchPhrase;
   }
   demo(subject){
     return `Today we are learning about ${subject}`;
