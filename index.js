@@ -178,6 +178,9 @@ class Student extends Lambdasian {
   listSubjects(){
     return this.favSubjects.toString(',');
   }
+  PRAssignment(subject){
+    return `${this.name} has submitted a PR for ${subject}`;
+  }
 }
 
 /*
