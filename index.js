@@ -86,12 +86,14 @@ class Car {
   }
   fill(gallons) {
     if (this.tank = 0){
-      this.tank += gallons;
+      this.tank.push(gallons); 
     }
   }
   drive(distance) {
-    var x = fuel;
-
+    var x = this.tank * this.milesPerGallon;;
+    if (distance > x) {
+      this.tank = 0;
+    }
   }
 }
 
