@@ -90,9 +90,11 @@ class Car {
     }
   }
   drive(distance) {
-    var x = this.tank * this.milesPerGallon;;
+    var x = this.tank * this.milesPerGallon;
     if (distance > x) {
       this.tank = 0;
+      this.odometer += distance;
+      return `I ran out of fuel at ${this.odometer} miles!`;
     }
   }
 }
